@@ -1,4 +1,4 @@
-clc
+clc;
 
 syms x1 x2
 gw = 1 + (1/4000)*(x1^2 + x2^2) - (cos(x1)*cos(x2/sqrt(2)));

@@ -395,10 +395,10 @@ plot(x_initial(1), x_initial(2), '*', 'Color', 'k', 'LineWidth', 5);
 
 % Add a dummy line for the legend
 h1 = plot(NaN, NaN, 'r-', 'LineWidth', 2);
-h2 = plot(NaN, NaN, 'b-', 'LineWidth', 2); % Red line for another algorithm
-h3 = plot(NaN, NaN, 'm-', 'LineWidth', 2); % Green line for yet another algorithm
-h4 = plot(NaN, NaN, 'g-', 'LineWidth', 2); % Red line for another algorithm
-h5 = plot(NaN, NaN, 'c-', 'LineWidth', 2); % Green line for yet another algorithm
+h2 = plot(NaN, NaN, 'b-', 'LineWidth', 2);
+h3 = plot(NaN, NaN, 'm-', 'LineWidth', 2);
+h4 = plot(NaN, NaN, 'g-', 'LineWidth', 2);
+h5 = plot(NaN, NaN, 'c-', 'LineWidth', 2);
 
 % Add the legend with the custom entry
 legend([h1, h2, h3, h4, h5], {'Steepest Descent', 'Fletcher-Reeves', 'Hestenes-Stiefel', 'Polak-Ribiere', 'Newton-Raphson'});
@@ -420,10 +420,10 @@ plot3(polak_x(:, 1), polak_x(:, 2), polak_values, 'g-*', 'LineWidth', 1);
 plot3(newton_x(:, 1), newton_x(:, 2), newton_values, 'c-*', 'LineWidth', 1);
 
 h1 = plot(NaN, NaN, 'r-', 'LineWidth', 2);
-h2 = plot(NaN, NaN, 'b-', 'LineWidth', 2); % Red line for another algorithm
-h3 = plot(NaN, NaN, 'm-', 'LineWidth', 2); % Green line for yet another algorithm
-h4 = plot(NaN, NaN, 'g-', 'LineWidth', 2); % Red line for another algorithm
-h5 = plot(NaN, NaN, 'c-', 'LineWidth', 2); % Green line for yet another algorithm
+h2 = plot(NaN, NaN, 'b-', 'LineWidth', 2);
+h3 = plot(NaN, NaN, 'm-', 'LineWidth', 2);
+h4 = plot(NaN, NaN, 'g-', 'LineWidth', 2);
+h5 = plot(NaN, NaN, 'c-', 'LineWidth', 2);
 
 legend([h1, h2, h3, h4, h5], {'Steepest Descent', 'Fletcher-Reeves', 'Hestenes-Stiefel', 'Polak-Ribiere', 'Newton-Raphson'});
 

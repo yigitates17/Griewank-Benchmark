@@ -57,11 +57,12 @@ for iter = 1:iter_end
     
     x = x_initial;
     g = double(subs(grad, var, x.'));
+
+    i = 1;
     
-    fprintf('k=%d, x1=%f, x2=%f, f(x)=%f, norm=%f\n', 1, x(1), x(2), ...
+    fprintf('k=%d, x1=%f, x2=%f, f(x)=%f, norm=%f\n', i, x(1), x(2), ...
         double(subs(gw, var, x.')), norm(g));
     
-    i = 1;
     tic
     while norm(g) > epsilon
 
